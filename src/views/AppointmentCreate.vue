@@ -239,7 +239,7 @@ const handleSubmit = async () => {
 
     // 创建预约
     const result = store.createAppointment({
-      patientId: `patient-${Date.now()}`,
+      patientId: 'patient001', // 使用固定测试患者ID以便在"我的预约"中显示
       patientName: appointmentForm.value.patientName,
       doctorId: selectedDoctorId.value,
       doctorName: selectedDoctor.value.name,
